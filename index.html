@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>Simple Fade Slider</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/0c51b4e0d7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="slider">
+        <div class="slide">
+            <picture>
+                <source srcset="img/1-sm.jpg" media="(max-width: 639px)">
+                <source srcset="img/1-md.jpg" media="(min-width: 640px) and (max-width:1279px)">
+                <img src="img/1-xl.jpg" alt="image">
+            </picture>
+        </div>
+        <div class="slide">
+            <picture>
+                <source srcset="img/2-sm.jpg" media="(max-width: 639px)">
+                <source srcset="img/2-md.jpg" media="(min-width: 640px) and (max-width:1279px)">
+                <img src="img/2-xl.jpg" alt="image">
+            </picture>
+        </div>
+        <div class="slide">
+            <picture>
+                <source srcset="img/3-sm.jpg" media="(max-width: 639px)">
+                <source srcset="img/3-md.jpg" media="(min-width: 640px) and (max-width:1279px)">
+                <img src="img/3-xl.jpg" alt="image">
+            </picture>
+        </div>
+        <div class="slide">
+            <picture>
+                <source srcset="img/4-sm.jpg" media="(max-width: 639px)">
+                <source srcset="img/4-md.jpg" media="(min-width: 640px) and (max-width:1279px)">
+                <img src="img/4-xl.jpg" alt="image">
+            </picture>
+        </div>
+        <button class="prev btn"><i class="fas fa-chevron-left"></i></button>
+        <button class="next btn"><i class="fas fa-chevron-right"></i></button>
+        <div class="bullets">
+            <span class="bullet"></span>
+            <span class="bullet"></span>
+            <span class="bullet"></span>
+            <span class="bullet"></span>
+        </div>
+    </div>
+
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>
