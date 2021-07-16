@@ -86,12 +86,12 @@ const handleTouchStart = (event) => {
 
 const handleTouchEnd = (event) => {
     x2 = event.changedTouches[0].clientX;
-    if(x1 > x2 && event.target !== prev) {
-        prevSlide();
+    if(x1 > x2 && event.target !== next && event.target !== prev) {
+        nextSlide();
         stopLoop();
         startLoop();
-    } else if (x1 < x2 && event.target !== next) {
-        nextSlide();
+    } else if (x1 < x2 && event.target !== next && event.target !== prev) {
+        prevSlide();
         stopLoop();
         startLoop();
     }
